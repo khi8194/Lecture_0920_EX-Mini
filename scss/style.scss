@@ -10,13 +10,19 @@ main {
     overflow: hidden;
 
     .panel {
-        width: 2000px;
+        //anime에서 margin은 퍼센트 모션 처리 불가하기 때문에, absolute의 left로 배치
+        position: absolute; 
+        top: 0;
+        left: 0;
+        // width: 2000px;
+        width: 300%; // 부모는 무조건 100% * 패널 개수
         height: 200px;
         display: flex;
 
         li{
-            width: 400px;
-            height: 200px;
+            // width: 100%;
+            width: 33.3333%; // 자식 요소는 무조건 100% / 패널 개수
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
