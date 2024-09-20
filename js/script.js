@@ -11,5 +11,8 @@ const btns = frame.querySelectorAll(".btns li");
 btns.forEach((btn, idx) => {
 	btn.addEventListener("click", () => {
 		console.log(idx);
+		new Anime(panel, { marginLeft: -400 * idx }, { duration: 500 });
 	});
 });
+
+//미션 : 위의 코드에서 각각의 버튼을 클릭하면 해당 순번의 패널이 프레임 안쪽으로 들어오도록 new Anime를 활용해 좌우 슬라이더 모션 처리

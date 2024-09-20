@@ -7,6 +7,7 @@ main {
     border: 1px solid red;
     margin: 100px auto;
     position: relative;
+    overflow: hidden;
 
     .panel {
         width: 2000px;
